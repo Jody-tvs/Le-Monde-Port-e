@@ -1,141 +1,144 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<title>Le Monde à Portée</title>
-		<meta name="description" content="Le Monde à Portée">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<header class="header">
-			<a href="index.html"><img src="img/logoo.png" alt="Le Monde à Portée blog de voyages"></a>
-			<nav>
-				<ul class="container">
-					<li><a href="#carnets">Carnets de voyages</a></li>
-					<li><a href="#saisons">Quand partir ?</a></li>
-					<li><a href="#apropos">À propos</a></li>
-					<li><a href="#contact">Me contacter</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<h1>Carnets de voyage</h1>
-			<section id="carnets" class="container">
-				<h2>Mes derniers voyages</h2>
-				<article>
-					<h3>Tromsø, Norvège</h3>
-					<img class="img-left" src="img/norvege.jpg" alt="Vienne Autriche">
-					<p>Tromsø, la perle de l'Arctique</p>
-					<p>Située au cœur du cercle polaire, Tromsø est un mélange parfait de nature sauvage et de culture nordique. En hiver, ses aurores boréales magiques et ses aventures en traîneaux à chiens ou motoneige fascinent les visiteurs.</p>
-					<p>Côté culture, découvrez les musées sur la vie arctique et dégustez des plats locaux comme le renne ou le crabe royal. Avec son ambiance chaleureuse et ses paysages à couper le souffle, Tromsø est une escapade unique au bout du monde.</p>
-					<div class="clear"></div>
-				</article>
-				<hr>
-				<article>
-					<h3>Algarve, Portugal</h3>
-					<img class="img-right" src="img/portugal.jpg" alt="Marrakech, Maroc">
-					<p>L'Algarve, un coin de paradis au Portugal avec ses falaises dorées, ses plages idylliques et ses villages pittoresques, l'Algarve est une destination de rêve. Au sud du Portugal, cette région offre des paysages variés, parfaits pour se détendre ou explorer.</p>
-					<p>Entre les criques secrètes de Lagos, les grottes marines de Benagil, et les eaux turquoise de la côte, les amoureux de la mer seront comblés. Côté terre, les villages comme Tavira ou Silves révèlent l'histoire et le charme authentique</p>
-					<p>Ajoutez à cela un climat doux toute l'année et une cuisine savoureuse – pensez aux sardines grillées et pastéis de nata – et l'Algarve devient une invitation irrésistible</p>
-					<div class="clear"></div>
-				</article>
-				<hr>
-				<article>
-					<h3>Paraty, Brésil</h3>
-					<img class="img-left" src="img/bresil.jpg" alt="Vienne Autriche">
-					<p>Paraty, le trésor colonial du Brésil</p>
-					<p>Située entre Rio de Janeiro et São Paulo, Paraty est une ville qui semble figée dans le temps. Ses rues pavées, ses maisons blanches aux volets et colorées ses églises historiques vous plongent directement dans l'époque coloniale.</p>
-					<p>Côté culture, la ville s'anime lors de festivals comme la célèbre Fête Littéraire Internationale de Paraty (FLIP), attirant des visiteurs du monde entier. Avec son ambiance chaleureuse, sa beauté naturelle et son riche patrimoine, Paraty est une étape incontournable au Brésil.</p>
-					<div class="clear"></div>
-				</article>
-				<hr>
-			</section>
-			<section id="saison">
-				<div class="container">
-					<h2>Les meilleures saisons pour voyager</h2>
-					<table>
-						<tr>
-							<th scope="col">Ville</th>
-							<th scope="col">Pays</th>
-							<th scope="col">Périodes</th>
-						</tr>
-						<tr>
-							<td>Bali</td>
-							<td>Indonésie</td>
-							<td>juin à septembre</td>
-						</tr>
-						<tr>
-							<td>Marrakech</td>
-							<td>Maroc</td>
-							<td>mars à juin, septembre à novembre</td>
-						</tr>
-						<tr>
-							<td>Miami</td>
-							<td>USA</td>
-							<td>janvier à avril, novembre, décembre</td>
-						</tr>
-						<tr>
-							<td>Vienne</td>
-							<td>Autriche</td>
-							<td>juin à septembre</td>
-						</tr>
-						<tr>
-							<td>Sydney</td>
-							<td>Australie</td>
-							<td>mars à mai, septembre et octobre</td>
-						</tr>
-					</table>
-				</div>
-			</section>
-			<section id="apropos">
-				<div class="container">
-					<article>
-						<h2>À propos</h2>
-						<p>Je m'appelle Claire et j'aime les <strong>voyages</strong> et l'<strong>aventure</strong>.</p>
-						<p>C'est suite à un long <strong>tour du monde</strong> que j'ai changé de vie et que j'ai décidé de créer ce blog pour vous aider à voyager.</p>
-						<p>Ma passion pour le voyage est désormais devenu mon métier.</p>
-						<p>Vous pourrez trouver ici de l'inspiration et de nombreux conseils pour <strong>réduire votre budget voyages</strong> et pouvoir partir plus souvent.</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Le Monde à Portée</title>
+  <meta name="description" content="Le Monde à Portée">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/animations.js" defer></script>
+</head>
+<body>
+  <header class="header fade-in">
+    <a href="index.html">
+      <img src="img/logo.png" alt="Le Monde à Portée blog de voyages">
+    </a>
+    <nav>
+      <ul class="container">
+        <li><a href="#carnets">Carnets de voyages</a></li>
+        <li><a href="#saisons">Quand partir ?</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Me contacter</a></li>
+	</ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Carnets de voyage</h1>
+    <section id="carnets" class="container fade-in">
+      <h2>Mes derniers voyages</h2>
+      <article class="fade-in">
+        <h3>Tromsø, Norvège</h3>
+        <img class="img-left" src="img/norvege.jpg" alt="Vienne Autriche">
+        <p>Tromsø, la perle de l'Arctique</p>
+        <p>Située au cœur du cercle polaire, Tromsø est un mélange parfait de nature sauvage et de culture nordique. En hiver, ses aurores boréales magiques et ses aventures en traîneaux à chiens ou motoneige fascinent les visiteurs.</p>
+        <p>Côté culture, découvrez les musées sur la vie arctique et dégustez des plats locaux comme le renne ou le crabe royal.</p>
+        <div class="clear"></div>
+      </article>
+      <hr>
+      <article class="fade-in">
+        <h3>Algarve, Portugal</h3>
+        <img class="img-right" src="img/portugal.jpg" alt="Marrakech, Maroc">
+        <p>L'Algarve, un coin de paradis au Portugal avec ses falaises dorées, ses plages idylliques et ses villages pittoresques, l'Algarve est une destination de rêve. Au sud du Portugal, cette région offre des paysages variés, parfaits pour se détendre ou explorer.</p>
+        <p>Entre les criques secrètes de Lagos, les grottes marines de Benagil, et les eaux turquoise de la côte, les amoureux de la mer seront comblés. Côté terre, les villages comme Tavira ou Silves révèlent l'histoire et le charme authentique</p>
+        <div class="clear"></div>
+      </article>
+      <hr>
+      <article class="fade-in">
+        <h3>Paraty, Brésil</h3>
+        <img class="img-left" src="img/bresil.jpg" alt="Vienne Autriche">
+        <p>Paraty, le trésor colonial du Brésil</p>
+        <p>Située entre Rio de Janeiro et São Paulo, Paraty est une ville qui semble figée dans le temps. Ses rues pavées, ses maisons blanches aux volets et colorées ses églises historiques vous plongent directement dans l'époque coloniale.</p>
+        <p>Côté culture, la ville s'anime lors de festivals comme la célèbre Fête Littéraire Internationale de Paraty (FLIP), attirant des visiteurs du monde entier. Avec son ambiance chaleureuse, sa beauté naturelle et son riche patrimoine.</p>
+        <div class="clear"></div>
+      </article>
+      <hr>
+    </section>
+    <section id="saisons" class="fade-in">
+      <div class="container">
+        <h2>Les meilleures saisons pour voyager</h2>
+        <table>
+          <tr>
+            <th scope="col">Ville</th>
+            <th scope="col">Pays</th>
+            <th scope="col">Périodes</th>
+          </tr>
+          <tr>
+            <td>Tokyo</td>
+            <td>Japon</td>
+            <td>Mars à Mai, Septembre à Novembre</td>
+          </tr>
+          <tr>
+            <td>Le Cap</td>
+            <td>Afrique du Sud</td>
+            <td>Octobre à Mars</td>
+          </tr>
+          <tr>
+            <td>Vancouver</td>
+            <td>Canada</td>
+            <td>Juin à Septembre</td>
+          </tr>
+          <tr>
+            <td>Florence</td>
+            <td>Italie</td>
+            <td>Avril à Juin, Septembre à Octobre</td>
+          </tr>
+          <tr>
+            <td>Auckland</td>
+            <td>Nouvelle-Zélande</td>
+            <td>Novembre à Mars</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="apropos" class="fade-in">
+      <div class="container">
+        <article>
+          <h2>À propos</h2>
+          <p>Salut moi c'est Julie, exploratrice dans l'âme et chasseuse de bons plans voyages 🌍 !</p>
+						<p>Après avoir troqué ma routine contre un tour du monde mémorable (et un sac à dos qui a vu du pays), j'ai eu une révélation : pourquoi ne pas partager mes astuces pour voyager souvent, mieux et sans exploser son compte en banque ? 💸</p>
+						<p>Ici, je te file des idées pour t'évader et une tonne d'inspiration pour que l'aventure devienne ton quotidien.</p>
+						<p>Pas besoin d'être millionnaire pour vivre des expériences extraordinaires. Alors, prêt(e) à embarquer avec moi ? 🚀</p>
 					</article>
+      </div>
+    </section>
+    <section id="contact" class="container fade-in">
+      <h2>Me contacter</h2>
+      <address>
+        <i class="fa-solid fa-location-dot"></i> 31 Rue du voyage, Paris 16<sup>ème</sup><br>
+        <i class="fa-solid fa-envelope"></i> <a href="mailto:julie@voyage.com">julie@voyage.com</a><br>
+        <i class="fa-solid fa-phone"></i> <a href="tel:+33601030507">06 01 35 85 27</a>
+      </address>
+
+	  <div id="contact-form">
+		<h3>Formulaire de contact</h3>
+		<form action="form.html" method="post">
+			<div class="flex">
+				<div class="col">
+					<input type="text" id="lastname" placeholder="Votre nom">
+					<input type="email" id="email" placeholder="Votre email">
 				</div>
-			</section>
-			<section id="contact" class="container">
-				<h2>Me contacter</h2>
-				<address>
-					<i class="fa-solid fa-location-dot"></i> 31 Rue d'Auteuil, Paris 16<sup>ème</sup><br>
-					<i class="fa-solid fa-envelope"></i> <a href="mailto:cecile@helloworld.com">claire@helloworld.com</a><br>
-					<i class="fa-solid fa-phone"></i> <a href="tel:+33601030507">06 01 03 05 07</a>
-				</address>
-				<div id="contact-form">
-					<h3>Formulaire de contact</h3>
-					<form action="form.html" method="post">
-						<div class="flex">
-							<div class="col">
-								<input type="text" id="lastname" placeholder="Votre nom">
-								<input type="email" id="email" placeholder="Votre email">
-								<input type="tel" id="phone" placeholder="Votre numéro de téléphone">
-							</div>
-							<div class="col">
-								<textarea name="message" id="message" placeholder="Votre message"></textarea>
-							</div>
-						</div>
-						<div class="toolbar">
-							<button type="submit" class="button">Envoyer</button>
-						</div>
-					</form>
+				<div class="col">
+					<textarea name="message" id="message" placeholder="Votre message"></textarea>
 				</div>
-				<p>Suivez-moi sur :<br>
-					<a href="#" class="fa-brands fa-square-facebook"></a>
-					<a href="#" class="fa-brands fa-square-twitter"></a>
-					<a href="#" class="fa-brands fa-square-pinterest"></a>
-					<a href="#" class="fa-brands fa-square-instagram"></a>
-				</p>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer">
-				<p>&copy; 2024 Jody Tavares | Tous droits réservés.</p>
-				</div> 
-		</footer>
-	</body>
+			</div>
+			<div class="toolbar">
+				<button type="submit" class="button">Envoyer</button>
+			</div>
+		</form>
+	</div>
+      <p>Suivez-moi sur :<br>
+        <a href="#" class="fa-brands fa-square-facebook"></a>
+        <a href="#" class="fa-brands fa-square-twitter"></a>
+        <a href="#" class="fa-brands fa-square-pinterest"></a>
+        <a href="#" class="fa-brands fa-square-instagram"></a>
+      </p>
+    </section>
+  </main>
+  <footer class="footer fade-in">
+    <div class="footer">
+      <p>&copy; 2024 Jody Tavares | Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
 </html>

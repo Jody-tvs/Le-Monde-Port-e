@@ -6,34 +6,31 @@ html {
   font-size: 62.5%;
 }
 
-/* lato-regular - latin */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), 
+       url('../fonts/lato-v23-latin-regular.woff') format('woff'); 
 }
 
-/* lato-italic - latin */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
   src: local(''),
-       url('../fonts/lato-v23-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/lato-v23-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/lato-v23-latin-italic.woff2') format('woff2'), 
+       url('../fonts/lato-v23-latin-italic.woff') format('woff'); 
 }
 
-/* lato-700 - latin */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/lato-v23-latin-700.woff2') format('woff2'), 
+       url('../fonts/lato-v23-latin-700.woff') format('woff'); 
 }
 
 body {
@@ -45,8 +42,9 @@ body {
 }
 
 .container {
-  width: 900px;
+  width: 90%;
   margin: 0 auto;
+  max-width: 900px;
 }
 
 a {
@@ -54,7 +52,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-	background-color: #3b263f;
+  background-color: #3b263f;
   border-radius: 5px;
 }
 
@@ -66,18 +64,18 @@ h1, h2, h3 {
 h1 {
   color: #1b2d37;
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 3rem;
   word-spacing: 10px;
   border-bottom: 1px dotted;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 /* *****************************************************************
@@ -86,7 +84,12 @@ HEADER
 
 header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 100%;
+  height: auto;
 }
 
 header nav {
@@ -98,32 +101,38 @@ header nav ul {
   justify-content: space-around;
   list-style: none;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 
 header nav li {
-  width: 30%;
+  flex: 1;
+  text-align: center;
 }
 
 header nav a {
   color: #FFF;
   font-weight: bold;
-  display: inline-block;
+  display: block;
   padding: 0.7em 1em;
 }
 
 section {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .img-left {
-  float: left;
-  margin-right: 2%;
+  float: none;
+  margin: 0 auto;
+  display: block;
+  max-width: 90%;
 }
 
 .img-right {
-  float: right;
-  margin-left: 2%;
+  float: none;
+  margin: 0 auto;
+  display: block;
+  max-width: 90%;
 }
 
 .clear {
@@ -133,14 +142,6 @@ section {
 hr {
   border: 0;
   border-top: 1px solid;
-}
-
-.rouge {
-  color: #F00;
-}
-
-.ocre {
-  color: #CD8C56;
 }
 
 a.readmore {
@@ -155,7 +156,7 @@ a.readmore {
 }
 
 #carnets article img {
-  max-width: 49%;
+  max-width: 100%;
 }
 
 #apropos {
@@ -166,8 +167,9 @@ a.readmore {
 }
 
 #apropos article {
-  background-color: #FFF;
-  width: 50%;
+  background-color: #1b2d37;
+  color: #fff;
+  width: 100%;
   padding: 2%;
   box-sizing: border-box;
 }
@@ -207,23 +209,19 @@ form {
   flex-basis: 48%;
 }
 
-/* Style pour une barre d'outils => ou placer les boutons */
 .toolbar {
 	padding: 1em 2em;
 	text-align: center;
 }
 
-/* Style de chaque ligne (field) */
 input {
 	margin-bottom: 1em;
 }
 
-/* Style de chaque libélé */
 label {
   display: block;
 }
 
-/* Style de chaque input */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -242,22 +240,20 @@ textarea {
 	min-height: 10em;
 }
 
-/* Style de chaque bouton */
 .button {
 	display: inline-block;
 	padding: 0.8em 2em;
 	font-size: 1.6rem;
 	color: #fff;
-	background-color: #007eb3;
-	border: 2px solid #007eb3;
+	background-color: #8b3384;
 	border-radius: 0.5em;
 	cursor: pointer;
 }
 
 .button:hover {
 	text-decoration: none;
-	color: #007eb3;
-	background-color: #fff;
+	color: #fff;
+	background-color: #8d0682;
 }
 
 .fa-brands {
@@ -282,7 +278,7 @@ textarea {
 
 footer {
   text-align: center;
-  background-color: #007eb3;
+  background-color: #1b2d37;
   color: #FFF;
   padding: 1em 2em;
 }
@@ -294,4 +290,46 @@ footer a {
 
 footer img {
   width: 60px;
+}
+
+/* *****************************************************************
+ANIMATIONS
+***************************************************************** */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* *****************************************************************
+RESPONSIVE DESIGN
+***************************************************************** */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  header nav ul {
+    flex-wrap: nowrap;
+  }
+
+  .img-left, .img-right {
+    float: left;
+    margin: 1%;
+    max-width: 45%;
+  }
 }
